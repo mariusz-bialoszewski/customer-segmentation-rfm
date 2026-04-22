@@ -150,6 +150,12 @@ This project demonstrates:
 
 ---
 
+## 📁 Project Files
+
+* Customer_Segmentation_RFM.pbix – Power BI dashboard  
+* rfm_analysis.sql – SQL script for RFM segmentation  
+* dashboard.png – dashboard preview
+
 ---
 
 # 🇵🇱 Segmentacja klientów (RFM)
@@ -291,5 +297,13 @@ Wartość klientów jest silnie skoncentrowana w niewielkiej grupie, co oznacza,
 * utrzymanie najlepszych klientów
 * reaktywacja utraconych
 * rozwój klientów z potencjałem
+
+---
+
+## 📁 Pliki projektu
+
+* Customer_Segmentation_RFM.pbix – dashboard Power BI  
+* rfm_analysis.sql – skrypt SQL do segmentacji RFM  
+* dashboard.png – podgląd dashboardu  
 
 ---
