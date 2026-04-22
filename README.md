@@ -121,13 +121,15 @@ Built an interactive dashboard including:
 
 ## 📊 Dashboard
 
+Interactive Power BI dashboard presenting customer segmentation (RFM) and purchasing behavior.  
+
 ![Dashboard Preview](dashboard.png)
 
 ---
 
 ## 🚀 Conclusions
 
-Customer value is highly concentrated in a small segment of users.
+Customer value is highly concentrated in a small segment of users, indicating strong customer inequality.  
 
 👉 The main opportunity lies in:
 
@@ -274,13 +276,15 @@ Dashboard zawiera:
 
 ## 📊 Dashboard
 
-![Podgląd dashboardu](dashboard.png)
+Interaktywny dashboard Power BI prezentujący segmentację klientów (RFM) oraz ich zachowania zakupowe. 
+
+![Dashboard Preview](dashboard.png)
 
 ---
 
 ## 🚀 Wnioski biznesowe
 
-Wartość klientów jest silnie skoncentrowana w małej grupie.
+Wartość klientów jest silnie skoncentrowana w niewielkiej grupie, co oznacza, że tylko część klientów generuje większość przychodów.
 
 👉 Największe możliwości:
 
