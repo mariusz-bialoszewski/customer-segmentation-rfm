@@ -1,309 +1,120 @@
-# 📊 Customer Segmentation (RFM Analysis)
+## 📊 Customer Segmentation (RFM Analysis)
 
-## 📌 Project Overview
+**EN:**  
+End-to-end customer segmentation using the RFM (Recency, Frequency, Monetary) model with SQL and Power BI.  
+The project identifies high-value customers, inactive users, and growth opportunities.
 
-This project focuses on customer segmentation using the RFM (Recency, Frequency, Monetary) model.
-The goal was to identify high-value customers and analyze purchasing behavior using SQL and Power BI.
-
----
-
-## 🎯 Business Problem
-
-Not all customers contribute equally to revenue.
-The objective was to segment customers and identify:
-
-* high-value customers
-* inactive (lost) customers
-* customers with growth potential
+**PL:**  
+Kompleksowa segmentacja klientów z wykorzystaniem modelu RFM (Recency, Frequency, Monetary) przy użyciu SQL i Power BI.  
+Projekt identyfikuje najbardziej wartościowych klientów, klientów nieaktywnych oraz potencjał wzrostu.
 
 ---
 
-## 🛠 Tools & Technologies
+## 📊 Dashboard Preview  
 
-* SQL Server – data cleaning and transformation
-* Power BI – dashboard and data visualization
-
----
-
-## 📂 Dataset
-
-The analysis is based on an e-commerce dataset including:
-
-* transactions
-* customers
-* products
+![Dashboard](dashboard.png)
 
 ---
 
-## 🔎 Analysis Steps
+## 🎯 Business Problem  
 
-### 1. Data Preparation (SQL)
+**EN:**  
+Customers do not contribute equally to revenue. The goal was to identify key customer segments by analyzing:
 
-* combined datasets from multiple periods
-* removed invalid data:
+- recency (last purchase)
+- frequency (number of purchases)
+- monetary value (total spend)
 
-  * cancelled orders
-  * missing customer IDs
-  * negative values
-* created `order_value` (Quantity × Price)
+**PL:**  
+Nie wszyscy klienci generują taką samą wartość. Celem było określenie segmentów klientów poprzez analizę:
 
----
-
-### 2. Aggregation
-
-* aggregated data at customer level
-* calculated RFM metrics:
-
-  * Recency
-  * Frequency
-  * Monetary
+- recency (ostatni zakup)
+- frequency (liczba zakupów)
+- monetary (wartość zakupów)
 
 ---
 
-### 3. RFM Scoring
+## 🛠 Tools & Technologies  
 
-* applied `NTILE(5)` to create:
-
-  * R_score
-  * F_score
-  * M_score
+- SQL Server  
+- Power BI  
 
 ---
 
-### 4. Segmentation
+## 🧠 SQL Highlights  
 
-Customers were grouped into:
+**EN:**  
+- Data cleaning and preparation (removal of invalid records)  
+- Aggregation at customer level  
+- Calculation of RFM metrics (Recency, Frequency, Monetary)  
+- Customer scoring using `NTILE(5)`  
 
-* Champions
-* Loyal
-* Potential
-* New
-* At Risk
-* Lost
-* Others
-
----
-
-### 5. Visualization (Power BI)
-
-Built an interactive dashboard including:
-
-* KPI metrics:
-
-  * Total Customers
-  * Total Revenue
-  * Avg Revenue per Customer
-
-* Visualizations:
-
-  * Customers by Segment
-  * Revenue by Segment
-  * Recency Distribution
-  * Frequency Distribution
-  * Scatter plot (Frequency vs Revenue)
-
-* Interactivity:
-
-  * segment filters
-  * RFM filters
-  * reset button
+**PL:**  
+- Czyszczenie danych (usunięcie błędnych rekordów)  
+- Agregacja danych na poziomie klienta  
+- Wyliczenie metryk RFM  
+- Scoring klientów przy użyciu `NTILE(5)`  
 
 ---
 
-## 📈 Key Insights
+## 📈 Key Insights  
 
-* Most customers make only one purchase
-* A small group of customers generates the majority of revenue
-* High-value customers are clearly visible in the top-right area of the scatter plot
-* A large portion of customers is inactive (lost)
+**EN:**  
+- A small group of customers generates the majority of revenue  
+- Most customers make only one purchase  
+- A large portion of customers is inactive  
+- High-value customers are clearly identifiable  
 
----
+👉 Customer value is highly concentrated  
 
-## 📊 Dashboard
+**PL:**  
+- Niewielka grupa klientów generuje większość przychodów  
+- Większość klientów dokonuje jednego zakupu  
+- Duża część klientów jest nieaktywna  
+- Najbardziej wartościowi klienci są wyraźnie widoczni  
 
-Interactive Power BI dashboard presenting customer segmentation (RFM) and purchasing behavior.  
-
-![Dashboard Preview](dashboard.png)
-
----
-
-## 🚀 Conclusions
-
-Customer value is highly concentrated in a small segment of users, indicating strong customer inequality.  
-
-👉 The main opportunity lies in:
-
-* retaining high-value customers
-* reactivating lost customers
-* developing potential customers
+👉 Wartość klientów jest silnie skoncentrowana  
 
 ---
 
-## 💡 Author Note
+## 📌 Business Impact  
 
-This project demonstrates:
+**EN:**  
+The analysis highlights the importance of customer retention and targeted marketing strategies.  
+It suggests focusing on high-value segments while reactivating inactive users.
 
-* SQL data transformation
-* business-oriented analysis
-* customer segmentation techniques
-* dashboard creation in Power BI
-
----
-
-## 📁 Project Files
-
-* Customer_Segmentation_RFM.pbix – Power BI dashboard  
-* rfm_analysis.sql – SQL script for RFM segmentation  
-* dashboard.png – dashboard preview
+**PL:**  
+Analiza podkreśla znaczenie retencji klientów oraz działań marketingowych ukierunkowanych na konkretne segmenty.  
+Wskazuje na potrzebę utrzymania najlepszych klientów oraz reaktywacji nieaktywnych.
 
 ---
 
-# 🇵🇱 Segmentacja klientów (RFM)
+## 🚀 Recommendations  
 
-## 📌 Opis projektu
+**EN:**  
+- Retain high-value customers (Champions, Loyal)  
+- Reactivate inactive customers (At Risk, Lost)  
+- Develop customers with growth potential  
 
-Projekt dotyczy segmentacji klientów przy użyciu modelu RFM (Recency, Frequency, Monetary).
-Celem było zidentyfikowanie najbardziej wartościowych klientów oraz analiza ich zachowań zakupowych.
-
----
-
-## 🎯 Problem biznesowy
-
-Nie wszyscy klienci generują taką samą wartość.
-Celem analizy było określenie:
-
-* którzy klienci są najbardziej wartościowi
-* którzy klienci są nieaktywni
-* którzy mają potencjał wzrostu
+**PL:**  
+- Utrzymanie najlepszych klientów (Champions, Loyal)  
+- Reaktywacja klientów nieaktywnych (At Risk, Lost)  
+- Rozwój klientów z potencjałem  
 
 ---
 
-## 🛠 Narzędzia
+## 📁 Project Files  
 
-* SQL Server – przygotowanie danych
-* Power BI – dashboard i wizualizacja
-
----
-
-## 📂 Dane
-
-Analiza oparta jest na danych e-commerce zawierających:
-
-* transakcje
-* klientów
-* produkty
+- Customer_Segmentation_RFM.pbix – Power BI dashboard  
+- rfm_analysis.sql – SQL queries  
+- dashboard.png – dashboard preview  
 
 ---
 
-## 🔎 Etapy analizy
+## 💡 About the Project  
 
-### 1. Przygotowanie danych (SQL)
+**EN:**  
+This project was created as part of a data analytics portfolio to demonstrate SQL skills, customer segmentation, and business-oriented analysis.  
 
-* połączenie danych z różnych okresów
-* usunięcie błędnych danych:
-
-  * anulowane zamówienia
-  * brakujące ID klientów
-  * wartości ujemne
-* utworzenie metryki `order_value`
-
----
-
-### 2. Agregacja
-
-* agregacja danych na poziomie klienta
-* wyliczenie metryk:
-
-  * Recency
-  * Frequency
-  * Monetary
-
----
-
-### 3. Scoring RFM
-
-* zastosowanie `NTILE(5)`
-* utworzenie:
-
-  * R_score
-  * F_score
-  * M_score
-
----
-
-### 4. Segmentacja
-
-Podział klientów na segmenty:
-
-* Champions
-* Loyal
-* Potential
-* New
-* At Risk
-* Lost
-* Others
-
----
-
-### 5. Wizualizacja (Power BI)
-
-Dashboard zawiera:
-
-* KPI:
-
-  * liczba klientów
-  * przychód
-  * średni przychód na klienta
-
-* Wykresy:
-
-  * liczba klientów wg segmentów
-  * przychód wg segmentów
-  * rozkład recency
-  * rozkład frequency
-  * wykres rozrzutu
-
-* Interaktywność:
-
-  * filtrowanie segmentów
-  * filtrowanie RFM
-  * przycisk reset
-
----
-
-## 📈 Kluczowe wnioski
-
-* Większość klientów dokonuje tylko jednego zakupu
-* Niewielka grupa generuje większość przychodu
-* Najbardziej wartościowi klienci są w prawym górnym rogu wykresu
-* Duża część klientów jest nieaktywna
-
----
-
-## 📊 Dashboard
-
-Interaktywny dashboard Power BI prezentujący segmentację klientów (RFM) oraz ich zachowania zakupowe. 
-
-![Dashboard Preview](dashboard.png)
-
----
-
-## 🚀 Wnioski biznesowe
-
-Wartość klientów jest silnie skoncentrowana w niewielkiej grupie, co oznacza, że tylko część klientów generuje większość przychodów.
-
-👉 Największe możliwości:
-
-* utrzymanie najlepszych klientów
-* reaktywacja utraconych
-* rozwój klientów z potencjałem
-
----
-
-## 📁 Pliki projektu
-
-* Customer_Segmentation_RFM.pbix – dashboard Power BI  
-* rfm_analysis.sql – skrypt SQL do segmentacji RFM  
-* dashboard.png – podgląd dashboardu  
-
----
+**PL:**  
+Projekt został wykonany jako część portfolio Data Analyst, prezentując umiejętności SQL, segmentację klientów oraz analizę biznesową.
