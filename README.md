@@ -1,5 +1,11 @@
 ## 📊 Customer Segmentation (RFM Analysis)
 
+## 📁 Project Files  
+
+- `Customer_Segmentation_RFM.pbix` – Power BI dashboard  
+- `rfm_analysis.sql` – SQL queries  
+- `dashboard.png` – dashboard preview  
+
 **EN:**  
 End-to-end customer segmentation using the RFM (Recency, Frequency, Monetary) model with SQL and Power BI.  
 The project identifies high-value customers, inactive users, and growth opportunities.
